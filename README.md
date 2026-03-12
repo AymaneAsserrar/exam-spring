@@ -164,6 +164,17 @@ And pre-loaded accessories:
 | Bike Computer        | $89.99  |
 | Repair Kit           | $19.99  |
 
+## API Documentation (Swagger UI)
+
+Interactive API docs are available via Swagger UI:
+
+- OpenAPI JSON: [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
+- Swagger UI: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+
+### Notes
+- If you encounter a 500 error on the docs, ensure you are using springdoc-openapi-starter-webmvc-ui version 2.5.0 or higher for compatibility with Spring Boot 3.2+.
+- Entity relationships are properly annotated with `@JsonIgnore` to prevent serialization recursion issues in the OpenAPI spec.
+
 ## Database
 
 The application uses an in-memory H2 database that resets on each restart.
