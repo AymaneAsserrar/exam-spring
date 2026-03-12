@@ -28,11 +28,13 @@ public class Cart {
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "cart_bikes", joinColumns = @JoinColumn(name = "cart_id"), inverseJoinColumns = @JoinColumn(name = "bike_id"))
     @Builder.Default
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private Set<Bike> bikes = new HashSet<>();
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "cart_accessories", joinColumns = @JoinColumn(name = "cart_id"), inverseJoinColumns = @JoinColumn(name = "accessory_id"))
     @Builder.Default
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private Set<Accessory> accessories = new HashSet<>();
 
     public void addBike(Bike bike) {

@@ -34,5 +34,6 @@ public class Accessory {
 
     @ManyToMany(mappedBy = "accessories")
     @Builder.Default
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private Set<Cart> carts = new HashSet<>();
 }
