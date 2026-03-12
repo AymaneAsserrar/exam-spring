@@ -1,6 +1,6 @@
 # Bike Shop API
 
-A REST API for managing a bike shop built with Spring Boot 3.2 and Java 21.
+A REST API for managing a bike shop built with Spring Boot 3.2.4 and Java 17.
 
 ## Features
 
@@ -10,21 +10,23 @@ A REST API for managing a bike shop built with Spring Boot 3.2 and Java 21.
 - Search and filter functionality
 - Request validation with error messages
 - Pre-loaded sample data on startup
+- Interactive API documentation (Swagger UI)
 
 ## Tech Stack
 
-- Java 21
-- Spring Boot 3.2.1
+- Java 17
+- Spring Boot 3.2.4
 - Spring Data JPA
 - H2 Database (in-memory)
 - Lombok
 - Maven
+- Swagger/OpenAPI (springdoc-openapi)
 
 ## Getting Started
 
 ### Prerequisites
 
-- Java 21 or higher
+- Java 17 or higher
 - Maven 3.6+
 
 ### Running the Application
@@ -33,7 +35,7 @@ Clone the repository:
 
 ```bash
 git clone <repository-url>
-cd bike-shop
+cd exam-spring
 ```
 
 Build the project:
